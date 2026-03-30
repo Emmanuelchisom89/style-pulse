@@ -8,9 +8,8 @@
 
 // if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
 
-
 // filepath: c:\Users\hp\OneDrive\Desktop\Next Dev\style-pulse\src\lib\prisma.ts
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "@/generated/prisma"; // Adjust import based on your generated client
 import { PrismaPg } from "@prisma/adapter-pg"; // Adjust import based on your adapter
 import { Pool } from "pg"; // If using PostgreSQL
 
